@@ -1,8 +1,9 @@
+import {baseUrl} from './config.js'
+
 export default function(options){
-  console.log(options.url);
   return new Promise((resolve,reject)=>{
     wx.request({
-      url: 'options.url',
+      url: baseUrl + options.url,
       method: options.method || 'GET',
       data: options.data || {},
       success: resolve,

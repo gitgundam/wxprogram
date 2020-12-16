@@ -1,18 +1,26 @@
 // pages/home/home.js
 
-import request from '../../service/network.js'
+import {getMultidata} from '../../service/home.js'
 Page({
   data: {
-
+    banners:[],
+    recommends: [],
+    titles:['流行','新款','精选']
+  },
+  handleTabClick(event){
+    console.log(event.detail.index);
   },
   onLoad: function (options) {
-    request({url:`http://152.136.185.210:7878/api/m5/home/multidata`})
-    .then(res => {
-      console.log(res);
-    
-    })
-    .catch((err)=>{
-      console.log(err)
+    getMultidata().then(res => {
+      const data = res.data.data
+      const banners = data.banner.list
+      const recommends = data.recommend.list
+      this.setData(
+        {
+          banners,
+          recommends
+        }
+      )
     })
   },
 
@@ -64,4 +72,5 @@ Page({
   onShareAppMessage: function () {
 
   }
+  
 })

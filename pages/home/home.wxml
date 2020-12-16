@@ -1,2 +1,5 @@
-<!--pages/home/home.wxml-->
-<text>啊</text>
+<w-swiper list="{{banners}}" swiper-child="swiper-child"></w-swiper>
+<w-recommend list="{{recommends}}"></w-recommend>
+<w-popular/>
+<w-tab-control titles="{{titles}}"
+              bind:tabclick="handleTabClick"/>

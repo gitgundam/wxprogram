@@ -1,14 +1,15 @@
 {
-  "pages":[
+  "pages": [
     "pages/home/home",
     "pages/category/category",
     "pages/cart/cart",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "components/w-swiper/w-swiper"
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#4faf70",
     "navigationBarTitleText": "主页",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
