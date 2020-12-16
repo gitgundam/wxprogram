@@ -1,0 +1,29 @@
+.item image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.desc{
+  color: #333;
+  font-size: 25rpx;
+  text-align: center;
+
+}
+
+.title {
+  height: 1rem;
+  overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.info{
+  color: #ff7043;
+}

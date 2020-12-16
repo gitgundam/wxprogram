@@ -1,0 +1,8 @@
+<view class="item">
+  <image src="{{item.show.img}}" mode="widthFix"></image>
+  <view class="desc">
+    <view class="title">{{item.title}}</view>
+    <text class="info">￥{{item.price}}</text>
+  </view>
+
+</view>

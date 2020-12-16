@@ -7,6 +7,10 @@ Component({
     titles: {
       type: Array,
       value: []
+    },
+    isFixed:{
+      type: Boolean,
+      value: true
     }
   },
 
